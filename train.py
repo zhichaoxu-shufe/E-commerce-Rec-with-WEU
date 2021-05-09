@@ -85,7 +85,7 @@ elif args.model == 'TF+':
 
 if args.optimizer=='sgd':
 	optimizer = optim.SGD([
-		{'params': model.globalBias_p.parameters(), 'weight_decay': args.globalBias_lr, 'lr': args.globalBias_lr},
+		{'params': model.globalBias_p.parameters(), 'weight_decay': args.lambda_globalBias, 'lr': args.globalBias_lr},
 		{'params': model.globalBias_n.parameters(), 'weight_decay': args.lambda_globalBias, 'lr': args.globalBias_lr},
 		{'params': model.globalBias_g.parameters(), 'weight_decay': args.lambda_globalBias, 'lr': args.globalBias_lr},
 		{'params': model.globalBias_d.parameters(), 'weight_decay': args.lambda_globalBias, 'lr': args.globalBias_lr},
