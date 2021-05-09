@@ -102,9 +102,9 @@ if args.optimizer=='sgd':
 		{'params': model.userEmbed_n.parameters()},
 		{'params': model.itemEmbed_n.parameters()},
 
-		{'params': model.userBias_g.parameters(), 'weight_decay': args.lambda_userBias_greek},
-		{'params': model.userBias_d.parameters(), 'weight_decay': args.lambda_userBias_greek},
-		{'params': model.userBias_t.parameters(), 'weight_decay': args.lambda_userBias_greek},
+		{'params': model.userBias_g.parameters(), 'weight_decay': args.lambda_userBias_greek, 'lr': args.lr},
+		{'params': model.userBias_d.parameters(), 'weight_decay': args.lambda_userBias_greek, 'lr': args.lr},
+		{'params': model.userBias_t.parameters(), 'weight_decay': args.lambda_userBias_greek, 'lr': args.lr},
 	],
 	lr = args.lr,
 	weight_decay = args.weight_decay,
