@@ -1,16 +1,8 @@
-### E-commerce-Rec-with-WEU
-official implementation for CIKM 2020 paper E-commerce Rec with Weighted Expected Utility Theory\
-Requirements:\
-PyTorch==1.4 \
-python3 
+# E-commerce-Rec-with-WEU
+This is the official implementation for **E-commerce Recommendation with Weighted Expected Utility**, to appear in #CIKM2020
 
-if you use our code, please cite our paper
-#### Reference:
-Xu, Z., Han, Y., Zhang, Y., & Ai, Q. (2020, October). E-commerce Recommendation with Weighted Expected Utility. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (pp. 1695-1704).
+Requirements:<br>
+python==3.7.4<br>
+pytorch==1.4.0<br>
 
-to do: \
-change evaluation.py for efficient evaluation\
-implement other initialization strategy
-
-for dataset inquery, please refer to https://github.com/TobyGE/Risk-Aware-Recommnedation-Model
-
+To use our code, please cite [Our paper](https://arxiv.org/abs/2008.08302)
